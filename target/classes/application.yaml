@@ -1,0 +1,16 @@
+# Add visibility on the security
+logging:
+  level:
+    org:
+      springframework:
+        security: 'TRACE'
+
+# Github login
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: 'c45395490443fe778956'
+            client-secret: '8671c486b1a963baaff730d83e84441253fab78f'
