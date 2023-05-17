@@ -11,6 +11,7 @@ import org.springframework.security.web.SecurityFilterChain;
 public class OauthConfiguration {
 
     @Bean
+    @Order(1)
     public SecurityFilterChain configureOauthSecurity (HttpSecurity httpSecurity) throws Exception {
         return httpSecurity.authorizeHttpRequests()
                 .requestMatchers(HttpMethod.GET, "/")
